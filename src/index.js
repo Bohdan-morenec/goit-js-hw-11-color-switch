@@ -21,7 +21,7 @@ let intervalColorId;
 
 const randomBgColorBody = () => {
   intervalColorId = setInterval(() => {
-    const randomColor = colors[randomIntegerFromInterval(0, 5)];
+    const randomColor = colors[randomIntegerFromInterval(0, colors.length - 1)];
     bodyEl.style.backgroundColor = `${randomColor}`;
   }, 1000);
 
